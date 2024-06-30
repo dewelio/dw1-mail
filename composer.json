@@ -1,0 +1,29 @@
+{
+    "name": "dewelio/mail",
+    "description": "Mail package of Dewelio.",
+    "type": "library",
+    "license": "Dewelio EULA",
+    "authors": [
+        {
+            "name": "Dewelio",
+            "email": "info@dewelio.com",
+            "homepage": "https://www.dewelio.com"
+        }
+    ],
+    "require": {
+        "dewelio/core": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dewelio\\Mail\\MailServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Dewelio\\Mail\\": "src/"
+        }
+    }
+}

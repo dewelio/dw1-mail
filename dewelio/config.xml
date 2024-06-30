@@ -1,0 +1,46 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <path id="mail/general/default/disabled">
+        <value>0</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/development">
+        <value>0</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/mailer">
+        <value>smtp</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/host">
+        <value>dev.dewelio.com</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/port">
+        <value>587</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/username">
+        <value>noreply@dev.dewelio.com</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/password">
+        <value>yYVoUFvN_36sd</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/encryption">
+        <value>tls</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/from_address">
+        <value>noreply@dev.dewelio.com</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/default/from_name">
+        <value>Dewelio</value>
+        <visibility>4</visibility>
+    </path>
+    <path id="mail/general/development/email">
+        <value>devel@dewelio.com</value>
+        <visibility>4</visibility>
+    </path>
+</config>
