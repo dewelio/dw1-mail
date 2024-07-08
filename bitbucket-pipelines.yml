@@ -1,0 +1,13 @@
+image: atlassian/default-image:latest
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build Satis Repository
+          script:
+            - pipe: atlassian/ssh-run:0.8.0
+              variables:
+                SSH_USER: 'root'
+                SERVER: $DEWELIO_SATIS_URL01
+                MODE: 'command'
+                COMMAND: 'cd $DEWELIO_SATIS_DIR01 && php bin/satis build satis.json public/ dewelio/mail'
