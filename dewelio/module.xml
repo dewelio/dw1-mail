@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <name>mail</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <upgrade_commands>
 
     </upgrade_commands>

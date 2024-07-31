@@ -43,4 +43,8 @@
         <value>devel@dewelio.com</value>
         <visibility>4</visibility>
     </path>
+    <path id="mail/general/mailing/bcc">
+        <value></value>
+        <visibility>4</visibility>
+    </path>
 </config>
