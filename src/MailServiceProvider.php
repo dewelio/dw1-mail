@@ -8,6 +8,11 @@ use Dewelio\Mail\Support\Mail;
 
 class MailServiceProvider extends BaseServiceProvider
 {
+
+    protected array $commands = [
+        Commands\TestMail::class,
+    ];
+
     public function boot(): void {
         try {
             if(Config::get('mail/general/default/disabled')) {
