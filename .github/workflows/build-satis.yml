@@ -1,0 +1,24 @@
+name: Build Satis Repository
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Execute remote SSH command
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.DEWELIO_SATIS_URL01 }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.DEWELIO_SATIS_DIR01 }}
+            php bin/satis build satis.json public/ dewelio/mail
