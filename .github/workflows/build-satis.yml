@@ -16,9 +16,9 @@ jobs:
       - name: Execute remote SSH command
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: ${{ secrets.DEWELIO_SATIS_URL01 }}
+          host: dw1-packages.dewelio.com
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ${{ secrets.DEWELIO_SATIS_DIR01 }}
+            cd /opt/satis1
             php bin/satis build satis.json public/ dewelio/mail
